@@ -1,0 +1,16 @@
+body {
+	margin: 2vw;
+}
+
+.tab-pane {
+	padding: 20px;
+}
+
+[type=text], [type=email], [type=tel] {
+	width: 200px;
+	margin: 10px;
+}
+
+label {
+	font-weight: normal;
+}

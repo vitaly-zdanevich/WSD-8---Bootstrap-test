@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang='en'>
-    <head>
-        <title>WSD-8: Bootstrap</title>
-        <link href='bootstrap-3.3.6-dist/css/bootstrap.css' rel='stylesheet'/>
-    </head>
-    <body>
-        <div class='container-fluid'>
-            <ul class='nav nav-tabs'>
-              <li role='presentation' class='active'><a href='#'>Register</a></li>
-              <li role='presentation'><a href='#'>Gallery</a></li>
-              <li role='presentation'><a href='#'>Info</a></li>
-            </ul>
-        </div>
+        <head>
+            <title>WSD-8: Bootstrap</title>
+            <link href='bootstrap-3.3.6-dist/css/bootstrap.css' rel='stylesheet'/>
+            <link href='main.css' rel='stylesheet'/>
+        </head>
+        <body>
+            <div class='container-fluid'>
+                <ul class='nav nav-tabs'>
+                    <li role='presentation' class='active'><a href='#register'>Register</a></li>
+                    <li role='presentation'><a href='#gallery'>Gallery</a></li>
+                    <li role='presentation'><a href='#info'>Info</a></li>
+                </ul>
+                <div class='tab-content'>
+                    <div role='tabpanel' class='tab-pane active' id='register'>
+                        <form>
+                            <div class='row'>
+                                <div class='section-main col-xs-6 col-md-3'>
+                                  <input type='email' placeholder='email' required/>
+                                  <input type='text' placeholder='first name' required/>
+                                  <input type='text' placeholder='last name' required/>
+                                </div>
+                                <div class='section-additional col-xs-6 col-md-3'>
+                                  <input type='text' placeholder='job title'/>
+                                  <input type='tel' placeholder='phone'/>
+                                  <input type='text' placeholder='company' style='margin-bottom:40px'/>
+                                </div>
+                                <div class='section-additional col-xs-5 col-sm-6 col-md-6'>
+                                    <p>birthday: <input type='date'/></p>
+                                    <div style='margin:30px 0 25px'>
+                                        <label for='male'>male</label>
+                                        <input type='radio' id='male' name='gender'>
+                                        <label for='female'>female</label>
+                                        <input type='radio' id='female' name='gender'>
+                                     </div>
+                                    <select name='employees'>
+                                        <option>employees</option>
+                                        <option>1-5 employees</option> 
+                                        <option>6-20 employees</option>
+                                        <option>21-50 employees</option>
+                                    </select>
+                                </div>
+                             </div>
+                             <div class='row' class='col-sm-12' style='margin-top:50px'>
+                                 <div class='col-xs-6 col-sm-6 col-md-6'>
+                                     <input type='checkbox'/> 
+                                     I agree with <a style='cursor:pointer'>everything</a></div>
+                                 <div class='col-xs-6 col-sm-6 col-md-6'><button>register</button></div>
+                             </div>
+                        </form>
+                    </div>
+                    <div role='tabpanel' class='tab-pane' id='gallery'>...2</div>
+                    <div role='tabpanel' class='tab-pane' id='info'>...3</div>
+                </div>
+            </div>
         <script src='jquery.min.js'></script>
         <script src='bootstrap-3.3.6-dist/js/bootstrap.min.js'></script>
+        <script src='main.js'></script>
     </body>
 </html>
