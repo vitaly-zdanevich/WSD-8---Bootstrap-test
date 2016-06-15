@@ -1,4 +1,6 @@
-$('.presdentation a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
+$('[role=presentation] a').click(function(e) {
+	e.preventDefault()
+	$(this).tab('show')
 })
+
+$('img').colorbox({'scalePhotos':true, 'width':'300px'});
