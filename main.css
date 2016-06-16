@@ -1,5 +1,5 @@
 body {
-	margin: 2vw;
+	margin: 1vw;
 }
 
 .tab-pane {
@@ -13,4 +13,8 @@ body {
 
 label {
 	font-weight: normal;
+}
+
+img {
+	margin-bottom: 25px;
 }
