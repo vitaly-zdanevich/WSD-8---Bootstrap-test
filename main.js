@@ -3,4 +3,4 @@ $('[role=presentation] a').click(function(e) {
 	$(this).tab('show')
 })
 
-$('img').colorbox({rel:'group', scalePhotos:true, width:'70%'});
+$('.photo').colorbox({rel:'group', scalePhotos:true, width:'70%'});
