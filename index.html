@@ -16,37 +16,37 @@
             <div class='tab-content'>
                 <div role='tabpanel' class='tab-pane active' id='register'>
                     <form>
-                        <div class='row center-block' style='max-width:900px'>
-                            <div class='col-xs-12 col-sm-3 col-xs-offset-2 col-sm-offset-0'>
-                                <p><input type='email' placeholder='email' required/></p>
-                                <p><input type='text' placeholder='first name' required/></p>
-                                <p><input type='text' placeholder='last name' required/></p>
+                        <div class='row center-block' style='max-width:250px'>
+                            <div class='row well'>
+                               <p><input type='email' placeholder='email' required/></p>
+                               <p><input type='text' placeholder='first name' required/></p>
+                               <p><input type='text' placeholder='last name' required/></p>
                             </div>
-                            <div class='col-xs-12 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-1'>
+                            <div class='row well'>
                                 <p><input type='text' placeholder='job title'/></p>
                                 <p><input type='tel' placeholder='phone'/></p>
-                                <p><input type='text' placeholder='company' style='margin-bottom:40px'/></p>
+                                <p><input type='text' placeholder='company'/></p>
                             </div>
-                            <div class='col-xs-12 col-sm-4 col-xs-offset-2 col-sm-offset-0 col-md-offset-1'>
+                            <div class='row well'>
                                 <p>birthday: <input type='date'/></p>
-                                <div style='margin:20px 0 20px'>
-                                    <label for='male'>male</label>
-                                    <input type='radio' id='male' name='gender'>
-                                    <label for='female' style='margin-left:15px'>female</label>
-                                    <input type='radio' id='female' name='gender'>
-                                </div>
+                                <label for='male' style='margin:10px 0 20px'>male</label>
+                                <input type='radio' id='male' name='gender'>
+                                <label for='female' style='margin-left:40px'>female</label>
+                                <input type='radio' id='female' name='gender'>
                                 <select name='employees'>
                                     <option>employees</option>
                                     <option>1-5 employees</option> 
                                     <option>6-20 employees</option>
                                     <option>21-50 employees</option>
-                                </select>
+                               </select>
                             </div>
-                        </div>
-                        <div class='row col-sm-6 col-lg-6 col-sm-offset-2 col-lg-offset-4' style='margin-top:50px'>
-                            <input type='checkbox' id='agree'/>
-                            <label for='agree'> I agree to the <a style='cursor:pointer'>ToS</a></label>
-                            <button class='col-xs-offset-1'>register</button>
+                            <div class='row center-block' style='margin-bottom:20px; width:130px'>
+                                <input type='checkbox' id='agree' class='center-block col-xs-1' style='margin-right:5px'/>
+                                <label for='agree'> I agree to the <a style='cursor:pointer'>ToS</a></label>
+                            </div>
+                            <div class='row center-block' style='width:90px'>
+                                <button btn class='btn btn-default'>register</button>
+                            </div>
                         </div>
                     </form>
                 </div>
