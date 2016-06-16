@@ -1,3 +1,4 @@
+// component of Bootstrap
 $('[role=presentation] a').click(function(e) {
 	e.preventDefault()
 	$(this).tab('show')
