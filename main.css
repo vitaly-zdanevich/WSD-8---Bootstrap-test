@@ -6,9 +6,10 @@ body {
 	padding: 20px;
 }
 
-[type=text], [type=email], [type=tel] {
-	width: 200px;
-	margin: 10px;
+@media (min-width: 400px) {
+	[type=text], [type=email], [type=tel] {
+		width: 200px;
+	}
 }
 
 label {
